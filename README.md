@@ -50,7 +50,7 @@
 
 ### Как запустить
 1. Откройте проект в IntelliJ IDEA.
-2. Проверьте, что подключена библиотека Jackson (File -> Project Structure -> Libraries). Если нет, добавьте com.fasterxml.jackson.core:jackson-databind:2.15.2.
+2. Проверьте, что подключена библиотека Jackson.
 3. Запустите класс minidb.MiniDbApp.
 4. Вводите команды в консоль. Для выхода напишите exit.
 
@@ -69,7 +69,7 @@ SELECT title, author FROM books WHERE is_available = TRUE;
 
 Индексы:
 CREATE INDEX idx_year ON books (year);
-SELECT * FROM books WHERE year = 2008; -- теперь использует индекс
+SELECT * FROM books WHERE year = 2008; 
 
 Изменение и удаление:
 UPDATE books SET is_available = FALSE WHERE id = 1;
